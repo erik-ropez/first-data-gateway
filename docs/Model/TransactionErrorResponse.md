@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **apiTraceId** | **string** | Request identifier in API, can be used to request logs from the support team. | [optional] 
 **responseType** | [**\FirstData\FirstApi\Client\Model\ResponseType**](ResponseType.md) |  | [optional] 
 **ipgTransactionId** | **string** | The response transaction ID. | [optional] 
-**orderId** | **string** | Client order ID if supplied by client, otherwise the order ID. | [optional] 
+**orderId** | **string** | Note - Client Order ID if supplied by client. If not supplied by client, IPG will generate. The first 12 alphanumeric digits are passed down to Fiserv Enterprise reporting tool, Clientline and Data File Manager (DFM). | [optional] 
 **transactionType** | [**\FirstData\FirstApi\Client\Model\TransactionType**](TransactionType.md) |  | [optional] 
 **paymentToken** | [**\FirstData\FirstApi\Client\Model\PaymentTokenDetails**](PaymentTokenDetails.md) |  | [optional] 
 **transactionOrigin** | [**\FirstData\FirstApi\Client\Model\TransactionOrigin**](TransactionOrigin.md) |  | [optional] 
@@ -21,7 +21,9 @@ Name | Type | Description | Notes
 **approvedAmount** | [**\FirstData\FirstApi\Client\Model\Amount**](Amount.md) |  | [optional] 
 **transactionStatus** | **string** | Represents the status of a transaction immediately following the original processing request. This value is not stored for the transaction and is only available in the response when the transaction is processed. TransactionStatus is not returned on either the transaction inquiry or on the order inquiry. | [optional] 
 **transactionState** | **string** | Shows the state of the current transaction. | [optional] 
+**paymentAccountReferenceNumber** | **string** | Payment Account Reference Number from response, if supplied. | [optional] 
 **secure3dResponse** | [**\FirstData\FirstApi\Client\Model\Secure3dResponse**](Secure3dResponse.md) |  | [optional] 
+**standinResponseDetails** | [**\FirstData\FirstApi\Client\Model\StandinResponseDetails**](StandinResponseDetails.md) |  | [optional] 
 **redirectURL** | **string** | The endpoint redirection URL. | [optional] 
 **authenticationResponse** | [**\FirstData\FirstApi\Client\Model\Secure3DAuthenticationResponse**](Secure3DAuthenticationResponse.md) |  | [optional] 
 **schemeTransactionId** | **string** | The transaction ID received from schemes for the initial transaction of card on file flows. | [optional] 
@@ -30,6 +32,7 @@ Name | Type | Description | Notes
 **accountUpdaterResponse** | [**\FirstData\FirstApi\Client\Model\AccountUpdaterResponse**](AccountUpdaterResponse.md) |  | [optional] 
 **achResponse** | [**\FirstData\FirstApi\Client\Model\AchResponse**](AchResponse.md) |  | [optional] 
 **currencyConversionResponse** | [**\FirstData\FirstApi\Client\Model\CurrencyConversionResponse**](CurrencyConversionResponse.md) |  | [optional] 
+**steps** | [**\FirstData\FirstApi\Client\Model\PaymentStepRequest[]**](PaymentStepRequest.md) | Steps to be performed by the payer. | [optional] 
 **error** | [**\FirstData\FirstApi\Client\Model\Error**](Error.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **receipts** | [**\FirstData\FirstApi\Client\Model\ReceiptRequestInfo[]**](ReceiptRequestInfo.md) | Provides request information that is necessary to generate receipts. | [optional] 
 **scaExemptionType** | **string** | Strong customer authentication exemption type indicator. | [optional] 
 **scaVisaMerchantID** | **string** | Eight-character Visa merchant identifier (VMID) assigned by Visa, required for trusted merchant and delegated authentication. | [optional] 
+**businessApplicationIdentifier** | **string** | Indicates the indended use of the Account Funding Transaction. For Visa Only. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

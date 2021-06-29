@@ -5,6 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | Billing name. | [optional] 
+**firstName** | **string** | Billing first name. Note - Only supported for AMEX. | [optional] 
+**lastName** | **string** | Billing last name. Note - Only supported for AMEX. | [optional] 
 **customerId** | **string** | Customer ID for billing purpose. | [optional] 
 **birthDate** | [**\DateTime**](\DateTime.md) | Customer birth date. | [optional] 
 **contact** | [**\FirstData\FirstApi\Client\Model\Contact**](Contact.md) |  | [optional] 

@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **associationResponseCode** | **string** | Raw response code from issuer. | [optional] 
 **responseMessage** | **string** | Message returned from endpoints. | [optional] 
 **avsResponse** | [**\FirstData\FirstApi\Client\Model\AVSResponse**](AVSResponse.md) |  | [optional] 
+**cardholderInfoResponse** | [**\FirstData\FirstApi\Client\Model\CardholderInfoResponse**](CardholderInfoResponse.md) |  | [optional] 
 **securityCodeResponse** | **string** | Code returned for CVV. | [optional] 
 **merchantAdviceCodeIndicator** | **string** | Code to map merchant advice code to ISO specification. | [optional] 
 **responseIndicator** | **string** | Indicates whether the transaction was routed through the payment card&#39;s own network or through a different network. | [optional] 
