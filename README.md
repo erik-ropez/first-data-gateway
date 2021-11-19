@@ -2,8 +2,8 @@
 IPG API for payment processing.
 
 IPG API Specification.
-- API version: 21.4.0
-- Package version: 1.13.0
+- API version: 21.5.0
+- Package version: 1.14.0
 - Build package: org.openapitools.codegen.languages.PhpClientCodegen
 
 ## Requirements
